@@ -1,0 +1,10 @@
+# Add requirements only needed for your unittests and during development here.
+# They will be installed automatically when running `python setup.py test`.
+# ATTENTION: Don't remove pytest-cov and pytest as they are needed.
+WebTest >= 1.3.1
+pytest
+pytest-cov
+pytest-logging
+pylama
+pylama_pylint
+faker

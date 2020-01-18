@@ -1,0 +1,8 @@
+body { margin:200; padding:200; }
+#map { 
+  position:absolute; 
+  top:400px;
+  left:10px;
+  height:400px;
+  width:400px; 
+}

@@ -1,0 +1,14 @@
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-basemodel.git@v2.0.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-baseview.git@v2.0.1
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-huisstijl.git@v2.0.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-accounts.git@v3.1.1
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-dataframe.git@v1.2.0a1
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-dataframe.git@v1.2.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-email.git@v1.1.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-syncdb.git@v1.4.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-geommodel.git@v1.2.1
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-eventsourcing.git@v3.4.2
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/py-oedm-utils.git@v0.2.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/sqlalchemy-eventsourcing.git@v2.4.0
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-blobstorage.git@v1.0.0a
+git+https://1755ef065622e0622b6b624fb1b3535effbe1448:x-oauth-basic@github.com/VanOord/pyramid-mod-blobstorage.git@v2.0.0

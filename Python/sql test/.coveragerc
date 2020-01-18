@@ -1,0 +1,3 @@
+[run]
+source = sql_test
+omit = sql_test/test*

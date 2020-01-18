@@ -1,0 +1,53 @@
+extends pyramid_mod_baseview:templates/main.jade
+
+
+block resources_after
+  //- enable tooltips
+ 
+
+block content
+  row
+    .col-lg-3
+      h1 #{entity.name}
+      ul
+        each k in  ['_date', 'x', 'y', 'z', 'entity_type']
+          li
+            if 'description' in getattr(entity.__class__,k).info
+                .div(data-toggle="tooltip" title=getattr(entity.__class__,k).info['description'])
+                  | #{getattr(entity.__class__,k).info['displayname']}: 
+                  | #{getattr(entity.__class__,k).info['format'].format(getattr(entity,k))}
+                  | #{getattr(entity.__class__,k).info['units']}
+              else
+                | #{getattr(entity.__class__,k).info['displayname']}: 
+                | #{getattr(entity.__class__,k).info['format'].format(getattr(entity,k))}
+                | #{getattr(entity.__class__,k).info['units']}
+
+        if entity.entity_type == 'psd'
+          br
+          each k in  ['density', 'quality']
+            li
+              if 'description' in getattr(entity.__class__,k).info
+                  .div(data-toggle="tooltip" title=getattr(entity.__class__,k).info['description'])
+                    | #{getattr(entity.__class__,k).info['displayname']}: 
+                    | #{getattr(entity.__class__,k).info['format'].format(getattr(entity,k))}
+                    | #{getattr(entity.__class__,k).info['units']}
+                else
+                  | #{getattr(entity.__class__,k).info['displayname']}: 
+                  | #{getattr(entity.__class__,k).info['format'].format(getattr(entity,k))}
+                  | #{getattr(entity.__class__,k).info['units']}
+  
+  
+    .col-lg-9
+      if entity.entity_type == 'cpt'
+        #data_url.hidden ${request.route_url('cpt_plot', name=entity.name)}
+
+        .btn-group.hideshow(role='group', aria-label='...', style="text-align:center")
+        button.btn.btn-default.btn-md#fric Sleeve friction
+        button.btn.btn-default.btn-md#cone Cone resistance
+
+        #graph(style='width=100%')
+
+
+      
+
+

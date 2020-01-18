@@ -1,0 +1,101 @@
+<head>
+    Fractal trees
+    <script src="script.js"></script>
+</head>
+
+<body onload='myDemo();'>
+    <style>
+        canvas {
+            background-color: grey;
+        }
+        
+        Textbox3 {
+            width: 200px;
+            height: 10px;
+            text-align: center;
+        }
+        
+        .slidecontainer {
+            width: 100px;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100px;
+            ;
+            height: 10px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider:hover {
+            opacity: 1;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+    </style>
+    <br/>
+    <canvas id="canvas" width=500 height=500>
+        Your browser does not support HTML5
+    </canvas>
+    <br/>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="1000" value="1000" class="slider" id="myRange">
+    </div>
+
+    <p>
+        <Textbox3 id='TXTslider'></Textbox3>
+    </p>
+
+    <br/>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="3.14" value="2" step=0.1 class="slider" id="myRange2">
+    </div>
+
+    <p>
+        <Textbox3 id='TXTslider2'></Textbox3>
+    </p>
+
+    <br/>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="0.5" value="0" step=0.001 class="slider" id="myRange4">
+    </div>
+
+    <p>
+        <Textbox3 id='TXTslider4'></Textbox3>
+    </p>
+
+    <br/>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="3.14" value="0.5" step=0.001 class="slider" id="myRange3">
+    </div>
+
+    <p>
+        <Textbox3 id='TXTslider3'></Textbox3>
+    </p>
+
+
+
+
+
+
+
+</body>

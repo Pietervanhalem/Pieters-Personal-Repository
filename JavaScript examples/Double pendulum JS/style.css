@@ -1,0 +1,79 @@
+canvas {
+    background-color: grey;
+}
+
+Textbox3 {
+    width: 200px;
+    height: 10px;
+    text-align: center;
+    /*   
+    border: 5px solid blue;
+    border-radius: 20px;
+    background-color: lightblue;
+    color: white; 
+   */
+}
+
+.slidecontainer {
+    width: 100px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    ;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button {
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: salmon;
+    border: none;
+}
+
+button:hover {
+    background: lightsalmon;
+}
